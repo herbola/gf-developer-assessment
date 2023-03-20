@@ -1,0 +1,6 @@
+{
+  "jobStorage": "memory",
+  "topic": "some-topic",
+  "deadLetterTopic": "some-dead-letter-topic",
+  "proxyUrl": "http://api-example.org"
+}

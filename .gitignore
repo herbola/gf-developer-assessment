@@ -1,0 +1,37 @@
+# Dependency directory and npm log
+node_modules
+npm-debug.log
+
+# Code coverage results
+/coverage
+.nyc_output
+
+# Built package
+/*.tgz
+
+# Project files
+.tern-port
+.tern-project
+.idea
+*.iml
+
+# Cache
+.eslintcache
+
+# Revision file
+config/_revision
+
+# OS X
+.DS_Store
+
+# The .env file is developer local and should never be checked in
+.env
+
+# Ignore everything in logs
+logs/*
+# Except the gitignore to be able to commit the logs folder
+!logs/.gitignore
+
+tmp
+
+*.log
