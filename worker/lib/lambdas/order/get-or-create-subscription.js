@@ -6,7 +6,22 @@ export default async function getOrCreateSubscription(message, context) {
 
   // YOUR CODE HERE
 
-  // WE RETURN THE SUBSCRIPTION HERE FOR TRACEABILITY
+  const response = await http.post(
+    {
+      path: "/subscription",
+      body: {
+        accountId,
+        productCode,
+        payment,
+      },
+      headers: {
+        "Content-Type": "application/json",
+      }
+    },
+  );
 
-  return { type: "subscription", id };
+
+  
+
+  return { type: response.data.type, id: response.data.id };
 }
